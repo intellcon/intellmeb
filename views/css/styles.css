@@ -1,4 +1,18 @@
+.owl-slider {
+}
+.steps {
+  background-color: #eee;
+}
 .steps div img {
   width: 100%;
   height: auto;
+}
+
+.stretcher-logo {
+  background-color: rgba(150, 150, 150, .2);
+}
+
+.about h2 {
+  color: #111;
+  text-align: center;
 }
