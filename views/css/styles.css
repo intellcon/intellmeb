@@ -16,3 +16,22 @@
   color: #111;
   text-align: center;
 }
+
+.banner h2 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  color: #000;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+footer .footer-showroom {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+}
