@@ -14456,7 +14456,6 @@ nav {
 }
 nav.navbar-fixed {
  position:fixed;
- background-color:rgba(32, 34, 38, .5);
 }
 nav.navbar-default {
  position:relative;
@@ -17467,17 +17466,17 @@ nav .cart-wrapper.open {
 }
 @media(min-width:768px) {
  .scroll-top.active {
-  bottom:545px
+  /*bottom:545px*/
  }
 }
 @media(min-width:992px) {
  .scroll-top.active {
-  bottom:590px
+  /*bottom:590px*/
  }
 }
 @media(min-width:1200px) {
  .scroll-top.active {
-  bottom:620px
+  /*bottom:620px*/
  }
 }
 .banner {
