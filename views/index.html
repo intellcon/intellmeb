@@ -673,20 +673,20 @@
       <section id="two" class="about">
         <div class="container">
           <h2>Комманда INTELLMEB</h2>
-          <p style="margin-bottom: 25px !important;"><b>INTELLMEB </b>– это молодая, энергично развивающаяся команда, идущая в ногу со временем, которая предлагает Вам современную, качественную мебель для дома и офиса по выгодной цене. Цена складывается из стоимости материалов, доставки, и работ по сборке. Вам не придется переплачивать, т.к. в цену не входит аренда торговых площадей, складских помещений и заработная плата штата сотрудников. Мы учтём все ваши пожелания и результат нашего любимого дела будет Вас радовать долгое время.</p>
+          <p style="margin-bottom: 25px !important;"><b class="black">INTELLMEB </b>– это молодая, энергично развивающаяся команда, идущая в ногу со временем, которая предлагает Вам современную, качественную мебель для дома и офиса по выгодной цене. Цена складывается из стоимости материалов, доставки, и работ по сборке. Вам не придется переплачивать, т.к. в цену не входит аренда торговых площадей, складских помещений и заработная плата штата сотрудников. Мы учтём все ваши пожелания и результат нашего любимого дела будет Вас радовать долгое время.</p>
           <div class="row">
-            <div class="col-3">
+            <div class="col-sm-3">
               <h3>Широкий ассортимент</h3>
               <p>Мы предлагаем Вам широкий ассортимент мебели: кухни, гардеробные, детские, шкафы-купе, столы. Фурнитура и материалы от ведущих производителей.</p>
             </div>
-            <div class="col-3">
+            <div class="col-sm-3">
               <h3>Индивидуальный подход</h3>
               <p>После оформления заказа мы направим к Вам специалиста, который сделает необходимые замеры, нарисует эскиз, учитывая Ваши пожелания, поможет выбрать материалы, рассчитает предварительную стоимость.</p></div>
-            <div class="col-3">
+            <div class="col-sm-3">
               <h3>Технологичные решения</h3>
               <p>Используя современные инструменты моделирования и 3D-визуализации, мы подготовим индивидуальный дизайн-проект с учётом особенностей Вашего помещения</p>
             </div>
-            <div class="col-3">
+            <div class="col-sm-3">
               <h3>Надежный результат</h3>
               <p>Наш опыт позволяет изготавливать любую мебель с учётом ваших пожеланий. Работа с надёжными производителями: Egger, Krono, Glaverbel, Italum, Decospan, позволяет делать мебель высокого качества.</p>
             </div>
@@ -1088,9 +1088,9 @@
 
           <li class="stretcher-item more">
             <div class="more-icon">
-              <span data-title-show="Show more" data-title-hide="+"></span>
+              <span data-title-show="Заказать" data-title-hide="+"></span>
             </div>
-            <a href="#"></a>
+            <a href="#" data-toggle="modal" data-target="#exampleModal"></a>
           </li>
 
         </ul>
@@ -1100,9 +1100,10 @@
 
       <section id="four" class="steps">
         <div class="container">
-          <!--<h2>Позвоните сегодня и уже через две недели мебель будет у Вас</h2>-->
+          <h2>Наш подход</h2>
           <img src="images/steps.svg" alt="">
         </div>
+        <button type="button" class="btn btn-main" data-toggle="modal" data-target="#exampleModal">Сделать заказ</button>
       </section>
 
 
@@ -1468,17 +1469,21 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Обратный звонок</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            ...
+            <p>Оставьте Ваши данные и мы перезвоним в течение 10 минут</p>
+            <label for="userName">Ваше имя</label>
+            <input type="text" id="userName" name="userName" placeholder="Введите Ваше имя">
+            <label for="userPhonenumber">Номер телефона</label>
+            <input type="text" id="userPhonenumber" name="userPhonenumber" placeholder="Введите Ваш номер телефона">
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+            <button type="button" class="btn btn-primary">Отправить</button>
           </div>
         </div>
       </div>

@@ -1,11 +1,31 @@
 .owl-slider {
 }
+
+.black {
+  color: black;
+}
 .steps {
+  text-align: center;
   background-color: #eee;
 }
+
+.steps h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.steps div {
+  text-align: center;
+}
+
 .steps div img {
-  width: 100%;
+  width: 80%;
   height: auto;
+}
+
+.steps button {
+  margin-top: 40px;
 }
 
 .stretcher-logo {
@@ -15,6 +35,10 @@
 .about h2 {
   color: #111;
   text-align: center;
+}
+
+.about p {
+  text-align: justify;
 }
 
 .banner h2 {
@@ -34,4 +58,16 @@ footer .footer-showroom {
   padding-top: 30px;
   padding-bottom: 25px;
   margin-bottom: 0;
+}
+
+.modal label {
+  display: block;
+}
+
+.modal input {
+  display: block;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 10px 5px;
 }
