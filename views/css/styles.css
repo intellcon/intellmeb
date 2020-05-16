@@ -1,5 +1,3 @@
-.owl-slider {
-}
 
 .black {
   color: black;
@@ -60,14 +58,10 @@ footer .footer-showroom {
   margin-bottom: 0;
 }
 
-.modal label {
-  display: block;
+.modal-body>p {
+  text-align: justify;
 }
 
-.modal input {
-  display: block;
-  width: 100%;
-  border: 1px solid #aaa;
-  border-radius: 3px;
-  padding: 10px 5px;
+.modal-header .close {
+  margin-top: -6px !important;
 }
