@@ -9,6 +9,21 @@ $('a[href*="#"]').click(function() {
 $('[data-target="#myModal"]').on("click", function() {
   $('input').val('');
 });
+
+$("#sendForm").on('click', function(e) {
+  var data = {};
+  data.name = $('#recipient-name').val();
+  data.mail = $('#recipient-mail').val();
+  e.preventDefault();
+  $.ajax({
+    url:"/",
+    type: "POST",
+    data: data,
+    success: function(res) {
+      console.log(res);
+    }
+  });
+});
 //$('input').on('keydown', function(e){
   //alert(e.keyCode);
   //e.preventDefault();
