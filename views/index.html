@@ -277,8 +277,6 @@
           </div>
         </header>
 
-        <!-- === stretcher === -->
-
         <ul class="stretcher">
 
           <!-- === stretcher item === -->
@@ -293,8 +291,8 @@
             </div>
             <!--main text-->
             <figure>
-              <h4>Modern furnishing projects</h4>
-              <figcaption>New furnishing ideas</figcaption>
+              <h4>Современные кухни</h4>
+              <figcaption>Под самых требовательных хозяек</figcaption>
             </figure>
             <!--anchor-->
             <a href="#">Anchor link</a>
@@ -312,8 +310,8 @@
             </div>
             <!--main text-->
             <figure>
-              <h4>Furnishing and complements</h4>
-              <figcaption>Discover the design table collection</figcaption>
+              <h4>Яркие детские</h4>
+              <figcaption>Дети всегда в хорошем настроении</figcaption>
             </figure>
             <!--anchor-->
             <a href="#">Anchor link</a>
@@ -331,8 +329,8 @@
             </div>
             <!--main text-->
             <figure>
-              <h4>Which is Best for Your Home</h4>
-              <figcaption>Wardrobes vs Walk-In Closets</figcaption>
+              <h4>Вместительные шкафы</h4>
+              <figcaption>Сохранят пространство и уют в комнате</figcaption>
             </figure>
             <!--anchor-->
             <a href="#">Anchor link</a>
@@ -350,8 +348,8 @@
             </div>
             <!--main text-->
             <figure>
-              <h4>Keeping Things Minimal</h4>
-              <figcaption>Creating Your Very Own Bathroom</figcaption>
+              <h4>Технологичные гардеробные</h4>
+              <figcaption>Используем максимально полезно объемы помещения</figcaption>
             </figure>
             <!--anchor-->
             <a href="#">Anchor link</a>
@@ -430,7 +428,7 @@
                     <img src="/images/cot_house.png" alt="">
                   </div>
                   <div class="entry entry-block">
-                    <div class="date">23.03.2020</div>
+                    <div class="date">23.04.2020</div>
                     <div class="title">
                       <h2 class="h3">Кровать-домик в детской комнате</h2>
                     </div>
@@ -452,7 +450,7 @@
                     <img src="/images/coupe.png" alt="">
                   </div>
                   <div class="entry entry-block">
-                    <div class="date">23.03.2020</div>
+                    <div class="date">13.04.2020</div>
                     <div class="title">
                       <h2 class="h3">Как выбрать</br>шкаф-купе</h2>
                     </div>
@@ -474,7 +472,7 @@
                     <img src="/images/kitchen.png" alt="">
                   </div>
                   <div class="entry entry-block">
-                    <div class="date">23.03.2020</div>
+                    <div class="date">07.05.2020</div>
                     <div class="title">
                       <h2 class="h3">Как выбрать кухню, чтобы потом ни о чем не жалеть</h2>
                     </div>
@@ -529,13 +527,19 @@
           <form>
             <div class="modal-body">
               <p>Оставьте свои данные и мы перезвоним вам в течение десяти минут</p>
-              <div class="form-group">
+              <div id="res-name" class="form-group">
                 <label for="recipient-name" class="col-form-label">Ваше имя:</label>
                 <input type="text" class="form-control" id="recipient-name">
+                <p class="notValid">Это поле обязательно для заполнения!</p>
+              </div>
+              <div id="res-phone" class="form-group">
+                <label for="recipient-phone" class="col-form-label">Номер телефона:</label>
+                <input type="text" class="form-control" id="recipient-phone">
+                <p class="notValid">Это поле обязательно для заполнения!</p>
               </div>
               <div class="form-group">
-                <label for="recipient-mail" class="col-form-label">Электронная почта:</label>
-                <input type="text" class="form-control" id="recipient-mail">
+                <label for="message-text" class="col-form-label">Сообщение:</label>
+                <textarea class="form-control" id="message-text"></textarea>
               </div>
             </div>
             <div class="modal-footer">
@@ -546,25 +550,41 @@
         </div>
       </div>
     </div>
+    <div class="modal fade" id="okModal" tabindex="-1" role="dialog" aria-labelledby="okModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Успешно</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Сообщение успешно отправлено!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Хорошо</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--JS bundle -->
-    <!--<script src="js/bootstrap.bundle.min.js"></script>-->
     <script src="js/bundle.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
     <script src="js/intellmeb.js"></script>
-    <!-- Yandex.Metrika counter -->
-    <!--<script type="text/javascript" >-->
-      <!--(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};-->
-        <!--m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})-->
-      <!--(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");-->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-      <!--ym(61379545, "init", {-->
-        <!--clickmap:true,-->
-        <!--trackLinks:true,-->
-        <!--accurateTrackBounce:true,-->
-        <!--webvisor:true-->
-      <!--});-->
-    <!--</script>-->
-    <!--<noscript><div><img src="https://mc.yandex.ru/watch/61379545" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
-    <!-- /Yandex.Metrika counter -->
+      ym(61379545, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/61379545" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
   </body></html>
 

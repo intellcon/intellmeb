@@ -21,7 +21,7 @@ app.post('/', function(req, res, next) {
       pass: "207546Str"
     }
   });
-  var messg = 'Имя: ' + req.body.name + 'Почта: ' + req.body.mail;
+  var messg = 'Имя: ' + req.body.name + '\nТелефон: ' + req.body.phone + '\nСообщение: ' + req.body.message;
   console.log(messg);
   var mailOptions = {
     from: 'evp@intellcon.ru',

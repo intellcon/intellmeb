@@ -6,34 +6,39 @@ $('a[href*="#"]').click(function() {
   return false;
 });
 
-$('[data-target="#myModal"]').on("click", function() {
+$('[data-target="#myModal"]').on("click", function(e) {
   $('input').val('');
+  $('textarea').val('');
+  $('.form-group>p').css('display', 'none');
 });
-
+$('#recipient-phone').mask(" +7 (999) 999-99-99");
 $("#sendForm").on('click', function(e) {
   var data = {};
   data.name = $('#recipient-name').val();
-  data.mail = $('#recipient-mail').val();
+  data.phone= $('#recipient-phone').val();
+  data.message= $('#message-text').val();
   e.preventDefault();
-  $.ajax({
-    url:"/",
-    type: "POST",
-    data: data,
-    success: function(res) {
-      console.log(res);
+  if ((data.name !== '') && (data.phone !== '')) {
+    $.ajax({
+      url:"/",
+      type: "POST",
+      data: data,
+      success: function(res) {
+        console.log(res);
+      }
+    });
+    $('#myModal').modal('toggle');
+    $('#okModal').modal('toggle');
+  } else {
+    if (data.name == '') {
+      $('#res-name>p').css('display', 'block');
+    } else {
+      $('#res-name>p').css('display', 'none');
     }
-  });
+    if (data.phone == '') {
+      $('#res-phone>p').css('display', 'block');
+    } else {
+      $('#res-phone>p').css('display', 'none');
+    }
+  }
 });
-//$('input').on('keydown', function(e){
-  //alert(e.keyCode);
-  //e.preventDefault();
-//})
-//$('#myModal').on('show.bs.modal', function (event) {
-  //var button = $(event.relatedTarget) // Button that triggered the modal
-  //var recipient = button.data('whatever') // Extract info from data-* attributes
-  //// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  //// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  //var modal = $(this)
-  //modal.find('.modal-title').text('New message to ' + recipient)
-  //modal.find('.modal-body input').val(recipient)
-//})

@@ -65,3 +65,9 @@ footer .footer-showroom {
 .modal-header .close {
   margin-top: -6px !important;
 }
+
+.notValid {
+  color: red;
+  font-weight: bold;
+  display: none;
+}.
